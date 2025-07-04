@@ -1,0 +1,155 @@
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  color: black;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #f1f3f4;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #d93025;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #c2e7ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  color: #202124;
+  cursor: pointer;
+}
+
+/* Main area */
+.main {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.topbar {
+  margin-bottom: 20px;
+}
+
+.topbar input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#dark-mode-toggle {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d2e3fc;
+  cursor: pointer;
+}
+
+/* Email list styling */
+.email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-item {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.email-item:hover {
+  background-color: #e8f0fe;
+  cursor: pointer;
+}
+
+.sender {
+  font-weight: bold;
+  width: 20%;
+}
+
+.subject {
+  width: 30%;
+}
+
+.snippet {
+  color: gray;
+  width: 35%;
+}
+
+.time {
+  color: gray;
+  width: 15%;
+  text-align: right;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #202124;
+  color: white;
+}
+
+body.dark .sidebar {
+  background-color: #303134;
+}
+
+body.dark .main {
+  background-color: #202124;
+}
+
+body.dark .topbar input {
+  background-color: #3c4043;
+  color: white;
+  border: 1px solid #5f6368;
+}
+
+body.dark .email-item {
+  background-color: #292a2d;
+  color: white;
+}
+
+body.dark .email-item:hover {
+  background-color: #3c4043;
+}
+
+body.dark .sidebar li {
+  color: #e8eaed;
+}
+
+body.dark #dark-mode-toggle {
+  background-color: #5f6368;
+  color: white;
+}

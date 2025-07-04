@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gmail UI Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Gmail</h2>
+    <button>Compose</button>
+    <ul>
+      <li>Inbox</li>
+      <li>Starred</li>
+      <li>Sent</li>
+      <li>Drafts</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <input type="text" placeholder="Search mail...">
+      <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+
+    <div class="email-list">
+      <div class="email-item" onclick="openEmail('Google', 'Welcome to Gmail')">
+        <span class="sender">Google</span>
+        <span class="subject">Welcome to Gmail</span>
+        <span class="snippet">Here are some tips to get started...</span>
+        <span class="time">9:00 AM</span>
+      </div>
+
+      <div class="email-item" onclick="openEmail('GitHub', 'New login from device')">
+        <span class="sender">GitHub</span>
+        <span class="subject">New login from device</span>
+        <span class="snippet">We noticed a new login from...</span>
+        <span class="time">8:45 AM</span>
+      </div>
+
+      <div class="email-item" onclick="openEmail('Netflix', 'Your July Subscription')">
+        <span class="sender">Netflix</span>
+        <span class="subject">Your July Subscription</span>
+        <span class="snippet">Thank you for renewing your plan...</span>
+        <span class="time">7:30 AM</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
